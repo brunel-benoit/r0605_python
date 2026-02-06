@@ -174,3 +174,19 @@ def test_should_raise_invalid_vache_exception_given_age_max_when_vieillir():
     # Act / Assert
     with pytest.raises(InvalidVacheException):
         vache.vieillir()
+
+
+def test_age():
+    #Arrange
+    vache = Vache(petitNom="Marguerite", poids=450.0)
+
+    #Act
+    assert vache.age == 0
+
+
+
+def test_age2():
+    vache = Vache(petitNom="Marguerite", poids=450.0)
+    vache.veillir()
+    assert vache.age == 1
+
