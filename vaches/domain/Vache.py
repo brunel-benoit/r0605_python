@@ -50,7 +50,7 @@ class Vache:
         self.poids+=gain
         self.panse= 0.0
 
-    def veillir(self) :
+    def vieillir(self) :
         if self.age>=AGE_MAX:
             raise InvalidVacheException('')
         else :

@@ -2,9 +2,9 @@ import pytest
 
 from vaches.domain.errors.exception import InvalidVacheException
 from vaches.domain.nourriture import TypeNourriture
-from vaches.pie_noire import PieNoire
-from vaches.vache import Vache
-from vaches.vache_a_lait import VacheALait
+from vaches.domain.pie_noire import PieNoire
+from vaches.domain.Vache import Vache
+from vaches.domain.Vache_a_lait import VacheALait
 
 
 @pytest.fixture

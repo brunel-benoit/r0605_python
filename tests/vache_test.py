@@ -176,7 +176,7 @@ def test_should_raise_invalid_vache_exception_given_age_max_when_vieillir():
         vache.vieillir()
 
 
-def test_age():
+def test_age_refactor():
     #Arrange
     vache = Vache(petitNom="Marguerite", poids=450.0)
 
@@ -185,8 +185,9 @@ def test_age():
 
 
 
-def test_age2():
+def test_age2_refactor():
+
     vache = Vache(petitNom="Marguerite", poids=450.0)
-    vache.veillir()
+    vache.vieillir()
     assert vache.age == 1
 
