@@ -1,11 +1,12 @@
 
-from vaches.exception import InvalidVacheException
+from vaches.domain.errors.exception import InvalidVacheException
 
 AGE_MAX = 25
-AGE_MINI = 0
+AGE_MINI_NAISSANCE = 0
 POIDS_MIN = 2
-POIDS_MAX = 10000
-PANSE_MAX = 50
+POIDS_MAX = 1000.0
+PANSE_MAX = 50.0
+PANSE_MIN = 0
 RENDEMENT_RUMINATION = 0.25
 
 class Vache:
