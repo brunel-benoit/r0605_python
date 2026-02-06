@@ -1,7 +1,7 @@
 import pytest
 
-from vaches.exceptions import InvalidVacheException
-from vaches.vache import Vache
+from vaches.exception import InvalidVacheException
+from vaches.Vache import Vache
 
 
 # -------------------------
@@ -17,7 +17,6 @@ def test_should_create_vache_given_valid_state():
 
     # Assert (1 assertion métier)
     assert poids == 450.0
-
 
 @pytest.mark.parametrize("petitNom", ["", "   ", "\n\t"])
 def test_should_raise_invalid_vache_exception_given_empty_petit_nom(petitNom):
